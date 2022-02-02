@@ -3,29 +3,32 @@ let name = "pippo";
 let age = 30;
 let email = "info@simonegiusti.it";
 
-const test = {
+const sistassiEs6 = {
     name,
     age,
     email
 };
 
-console.log(test);
+console.log(sistassiEs6);
 
 
 
 /* destructuring */
-const test2 = {
+const testDestructuring = {
     'topolino': 'topolina',
     'paperino':  'paperina'
 }
-const {topolino, paperino} = test2;
+const {topolino, paperino} = testDestructuring;
 console.log(topolino);
 console.log(paperino);
 
-/* spread */
 
-const testSpread = {...test2, 'prova': 'test'};
+
+/* spread */
+const testSpread = {...testDestructuring, 'paperone': 'denaro'};
 console.log(testSpread);
+
+
 
 /* rest */
 function sommatoria(...valori) {
